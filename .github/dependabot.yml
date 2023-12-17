@@ -23,6 +23,8 @@ updates:
         update-types: ["version-update:semver-major"]
       - dependency-name: "webpack"
         update-types: ["version-update:semver-major"]
+      - dependency-name: "@fortawesome/vue-fontawesome"
+        update-types: ["version-update:semver-major"]
 
   - package-ecosystem: "github-actions"
     directory: "/"
