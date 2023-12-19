@@ -3,7 +3,7 @@ name: Node.js CI
 on: [push]
 
 jobs:
-  build-backend:
+  build_backend:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,7 +18,7 @@ jobs:
         working-directory: backend
         run: npm run compile-ts
 
-  build-frontend:
+  build_frontend:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
