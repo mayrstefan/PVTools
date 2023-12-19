@@ -13,7 +13,7 @@ jobs:
           node-version: '20.x'
       - name: Install dependencies
         working-directory: backend
-        run: npm ci --omit=dev
+        run: npm ci
       - name: Compile TypeScript
         working-directory: backend
         run: npm run compile-ts
