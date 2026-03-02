@@ -1067,10 +1067,11 @@ export default {
       this.displayData = BatterySizeResults
     },
     async getCoordinatesByAddress() {
+      const emailString = process.env.nominatimEmail ? '&email='+process.env.nominatimEmail : ''
       let osmReturn = (
         await this.$axios.post('/relay', {
           url:
-            'https://nominatim.openstreetmap.org/search?format=json&addressdetails=1&q=' +
+            'https://nominatim.openstreetmap.org/search?format=json&addressdetails=1'+emailString+'&q=' +
             encodeURIComponent(this.inputAddressSearchString),
           method: 'GET',
           body: {},
