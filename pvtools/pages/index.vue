@@ -1074,6 +1074,7 @@ export default {
             encodeURIComponent(this.inputAddressSearchString),
           method: 'GET',
           body: {},
+          headers['User-Agent']: "PV-Tools/Akkudoktor"
         })
       ).data
 
